@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PWA ToDo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <h1>ToDo App</h1>
+  <input id="taskInput" type="text" placeholder="Enter task" />
+  <button onclick="addTask()">Add</button>
+  <ul id="taskList"></ul>
+
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(() => console.log('✅ Service Worker Registered'))
+        .catch(err => console.error('⚠️ Service Worker Failed', err));
+    }
+  </script>
+</body>
+</html>
