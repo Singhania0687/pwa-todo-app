@@ -50,4 +50,5 @@ Serves cached files when offline.
 
 
 ## Simple UI Screenshots
-<imgr src="">
+<img src="https://github.com/Singhania0687/pwa-todo-app/blob/main/Todo.png?raw=true" width="100%" height="50%">
+
