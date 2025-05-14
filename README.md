@@ -45,3 +45,9 @@ Make sure to use a local server (not file://) for service workers to register.
 Intercepts fetch events.
 Caches key assets on install.
 Serves cached files when offline.
+
+```
+
+
+## Simple UI Screenshots
+<imgr src="">
